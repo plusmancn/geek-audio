@@ -1,0 +1,29 @@
+{
+  "name": "极客播",
+  "version": "1.0",
+  "description": "极客时间 PC 端音频播放插件，支持断点续播，支持快捷键 q 控制暂停/播放。",
+  "manifest_version": 2,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://time.geekbang.org/column/article/*"
+      ],
+      "css": [
+        "./audio.css"
+      ],
+      "js": [
+        "./audio.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}
