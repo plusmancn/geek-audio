@@ -8,7 +8,7 @@
 
 如上规则只在 `https://time.geekbang.org/column/article/*` 下生效。  
 
-## Usage
+## Usage
 **安装**  
 1. chrome 浏览器输入 [chrome://extensions](chrome://extensions)
 2. 开启开发者模式，
@@ -17,11 +17,11 @@
 
 **效果预览**  
 
-<img src="./asset/preview.png" width="350px">
+<img src="./asset/preview.png" width="350px">
 
 
 ## 开发备忘
-可以通过如下命令来生成 chrome 打包用的私钥  
+可以通过如下命令来生成 chrome 打包用的私钥  
 ```shell
 openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out key.pem
 ```
